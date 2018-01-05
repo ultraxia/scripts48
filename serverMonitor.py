@@ -10,7 +10,7 @@ def monitorTask(bot):
         if gl is not None:
                 for group in gl:
                         msg = '服务器当前状态：'+'\n'
-                        cpu_msg = 'CPU负载：'+str((psutil.cpu_percent(0))+'%'+'\n'
+                        cpu_msg = 'CPU负载：'+str(psutil.cpu_percent(0))+'%'+'\n'
                         mem_msg = '内存已使用：'+str(psutil.virtual_memory()[2])+'%'+'\n'
                         pids = psutil.pids()
                         for pid in pids:
