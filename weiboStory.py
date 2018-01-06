@@ -26,7 +26,7 @@ def weiboStory(bot, contact, member, content):
 			msg = str(idolName)+'的微博故事链接为：'+'\n'
 			while True:
 				try:
-					storyUrl = data['story_details'][0]['story']['segments'][page]['resources'][0]['hd_url']
+					storyUrl = data['story_details'][0]['story']['segments'][0]['resources'][page]['hd_url']
 					page = page+1
 					msg = msg+storyUrl+'\n'
 				except:
