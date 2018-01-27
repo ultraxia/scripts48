@@ -25,7 +25,14 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
    - 摩点项目ID
    - 指定金额，支持int型和float型
    - 指定时间，格式为*%Y-%m-%d %H:%M:%S*
- 
+
+
+`weiboBroadcast`
+* 用于将指定成员微博内容搬运至群内
+* 所需参数：
+  - idolName 成员名称
+  - groupid 群名称
+  - weibo_id 微博UID
 
 
 ##  更新记录
@@ -34,4 +41,6 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 **2018.01.07更新**：修复了`weiboStory.py`在多条记录场景下只能显示第一条的BUG
 
 **2018.01.07更新**：新增`amountTime.py`
+
+**2018.01.27更新**：新增`weiboBroadcast`
 
