@@ -27,7 +27,7 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
    - 指定时间，格式为*%Y-%m-%d %H:%M:%S*
 
 
-`weiboBroadcast`
+`weiboBroadcast.py`
 * 用于将指定成员微博内容搬运至群内
 * 所需参数：
   - idolName 成员名称
