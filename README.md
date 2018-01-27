@@ -42,5 +42,5 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 
 **2018.01.07更新**：新增`amountTime.py`
 
-**2018.01.27更新**：新增`weiboBroadcast`
+**2018.01.27更新**：新增`weiboBroadcast.py`
 
