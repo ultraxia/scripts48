@@ -24,7 +24,7 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 * 所需参数：
    - 摩点项目ID
    - 指定金额，支持int型和float型
-   - 指定时间，格式为*%Y-%m-%d %H:%M:%S*
+   - 指定时间，格式为*%m-%d %H:%M*
 
 
 `weiboBroadcast.py`
@@ -43,4 +43,6 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 **2018.01.07更新**：新增`amountTime.py`
 
 **2018.01.27更新**：新增`weiboBroadcast.py`
+
+**2018.01.31更新**：对`amountTime.py`进行功能升级和交互优化，现已支持查询指定时间段内集资总额
 
