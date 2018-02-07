@@ -41,6 +41,7 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
   - proid 摩点项目ID
   - groupid 群名称
 
+`pocket`
 
 ##  更新记录
 
@@ -56,3 +57,5 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 **2018.02.02更新**：新增`timedBroadcast.py`
 
 **2018.02.07更新**：优化`timedBroadcast.py`，新增涨幅（降幅）提示
+
+**2018.02.07更新**：新增文件夹`pocket`时间胶囊，包含全量备份及增量备份两个脚本
