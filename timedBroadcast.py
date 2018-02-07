@@ -16,11 +16,13 @@ groupid = '费沁源的冰糖草莓们'
 #----------------------------------------------------------
 
 money_list = []
+last_money_list = []
+
 header = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) Appl\
 eWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'}
 
 #此处设置定时播报的时间
-@qqbotsched(hour='23', minute='59')
+@qqbotsched(hour='20', minute='27')
 def mytask3(bot):
     gl = bot.List('group', groupid)
     if gl is not None:
@@ -42,6 +44,7 @@ def getSign(ret):
 def timing_querry():
     endTime = time.time()
     startTime = endTime-86400
+    lastday = startTime-86400
     page = 1
     url = 'https://wds.modian.com/api/project/orders'
     while True:
@@ -58,10 +61,20 @@ def timing_querry():
             orderTime = Time_format_conversion(data['pay_time'])
             if startTime <= orderTime <= endTime:
                 money_list.append(float(data['backer_money']))
+            if lastday <= orderTime <= startTime:
+                last_money_list.append(float(data['backer_money']))
         if datas == []:
 
             break
 
 #发送内容可自定义
-    msg = '美好的一天快要结束啦，今天冰糖草莓们累计达成了%.2f元集资，再接再厉哟~' % sum(money_list)
+    today = sum(money_list)
+    lastday = sum(last_money_list)
+    if  today > lastday:
+        percent = ((today-lastday)/lastday)*100
+        msg = '美好的一天快要结束啦，今天冰糖草莓们累计达成了%.2f元集资，相比昨日增长了%.2f%%，再接再厉哟~' % (today,percent)
+    else:
+        percent = ((lastday-today)/today)*100
+        msg = '美好的一天快要结束啦，今天冰糖草莓们累计达成了%.2f元集资，相比昨日减少了%.2f%%，明天继续加油哟~' % (today,percent)
     return msg
+
