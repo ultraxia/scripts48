@@ -100,7 +100,15 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 
 **2018.04.01更新**：针对摩点orders接口升级，`csvout.py`新增Nonetype数据类型判断
 
-**2018.04.01更新**：新增`dataCompensation.py`、`saveOrders.py`、`modian_feed.py`、`modian_monitor.py`、`jzdaily.py`
-`
-##一些说明
+**2018.04.01更新**：新增`dataCompensation.py`，定时检测数据状态，发现异常自动补偿
+
+**2018.04.01更新**：新增`saveOrders.py`，将订单详情保存至本地数据库
+
+**2018.04.01更新**：新增`modian_feed.py`，显示摩点orders接口信息流
+
+**2018.04.01更新**：新增`modian_monitor.py`，实时存储新产生的订单数据
+
+**2018.04.01更新**：新增`jzdaily.py`，配合crontab命令定时将当天数据归档存至本地数据库
+
+## 一些说明
 以上代码均基于[SNH48-费沁源应援会](https://weibo.com/u/5577610720?topnav=1&wvr=6&topsug=1)实际业务需求开发，如果能帮到您，不甚荣幸。同时，由于本人编码能力有限，如不知道如何使用或者有更好的意见，欢迎提交[issues](https://github.com/ultraxia/scripts48/issues)，看到会第一时间处理，感谢关注。
