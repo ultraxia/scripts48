@@ -47,6 +47,36 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 * 将摩点集资数据以csv格式保存至本地
 * 所需参数:
   - proid 摩点项目ID 
+
+`dataCompensation.py`
+* 每隔一段时间检查本地数据库与摩点接口返回数据是否一致，自动补偿遗漏数据
+* 所需参数:
+  - proid 摩点项目ID
+  - 数据库相关参数
+
+`saveOrders.py`
+* 将摩点订单数据存至数据库
+* 所需参数:
+  - proid 摩点项目ID
+  - 数据库相关参数
+
+`modian_feed.py`
+* 显示摩点orders接口返回的信息流
+* 所需参数:
+  - proid 摩点项目ID
+
+`modian_monitor.py`
+* 实时将摩点新产生的订单存至数据库
+* 所需参数:
+  - proid 摩点项目ID
+  - 数据库相关参数
+
+`jzdaily.py`
+* 每天晚上定时将当日集资数据存至数据库，分别为总额、参与人数、生成订单数三个维度
+* 所需参数:
+  - proid 摩点项目ID
+  - 数据库相关参数
+
 ##  更新记录
 
 
@@ -67,3 +97,10 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 **2018.02.08更新**：优化`amountTime.py`代码逻辑，提升了运行速度，并新增抽奖功能
 
 **2018.03.05更新**：新增`csvout.py`，一键生成集资报表
+
+**2018.04.01更新**：针对摩点orders接口升级，`csvout.py`新增Nonetype数据类型判断
+
+**2018.04.01更新**：新增`dataCompensation.py`、`saveOrders.py`、`modian_feed.py`、`modian_monitor.py`、`jzdaily.py`
+`
+##一些说明
+以上代码均基于[SNH48-费沁源应援会](https://weibo.com/u/5577610720?topnav=1&wvr=6&topsug=1)实际业务需求开发，如果能帮到您，不甚荣幸。同时，由于本人编码能力有限，如不知道如何使用或者有更好的意见，欢迎提交[issues](https://github.com/ultraxia/scripts48/issues)，看到会第一时间处理，感谢关注。
