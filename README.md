@@ -77,6 +77,12 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
   - proid 摩点项目ID
   - 数据库相关参数
 
+`modian_querry.py`
+* 查询某一用户集资历史记录详情
+* 所需参数
+  - userid 摩点用户UID
+
+
 ##  更新记录
 
 
@@ -110,5 +116,6 @@ Python初学者,微博ID:[沉迷学习的奥特虾](https://weibo.com/5510932216
 
 **2018.04.01更新**：新增`jzdaily.py`，配合crontab命令定时将当天数据归档存至本地数据库
 
+**2018.04.06更新**：新增`modian_querry.py`，输入某一用户摩点userid即可查询该用户集资历史记录详情
 ## 一些说明
 以上代码均基于[SNH48-费沁源应援会](https://weibo.com/u/5577610720?topnav=1&wvr=6&topsug=1)实际业务需求开发，如果能帮到您，不甚荣幸。同时，由于本人编码能力有限，如发现Bug或者有更好的建议，欢迎提交[issues](https://github.com/ultraxia/scripts48/issues)，看到会第一时间处理，感谢关注。
